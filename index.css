@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.fond {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("zimage(gymnase).jpg");
+  background-size: cover;
+}
+
+.navbar {
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  text-shadow: 1px 1px 15px #000000;
+}
+
+.navbar .menu {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 7%;
+}
+
+.navbar .logo {
+  position: absolute;
+  text-align: center;
+  margin: 8%;
+  margin-top: 45%;
+  margin-left: 9%;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 15px #000000;
+}
+
+@media screen and (min-width: 800px) {
+  .navbar .logo {
+    margin: 19%;
+    margin-left: 23%;
+    margin-top: 21%;
+    font-size: 3.7em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 15px #000000;
+  }
+
+  .navbar .menu {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 5.3%;
+  }
+}
+
+@media screen and (max-width: 200000px) {
+  .navbar {
+    padding: 0;
+  }
+
+  .navbar .logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+
+  .navbar .menu {
+    display: block;
+  }
+
+  .nav-links {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.500);
+    backdrop-filter: blur(6px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100%;
+    transition: all 0.5s ease;
+  }
+  
+  .nav-links.mobile-menu {
+    margin-left: 0;
+  }
+
+  .link1 {
+    margin: 11%;
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link2 {
+    display: inline;
+    font-size: 2em;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
